@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Y11 Bakers | Toast, Khari & Cakes in Gandhinagar</title>
+
+    <meta name="description" content="Y11 Bakers – crispy toast, whole wheat khari and celebration cakes. Serving Ahmedabad, Gandhinagar and across Gujarat.">
+    <meta name="theme-color" content="#4a1510">
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Y11 Bakers | Toast, Khari & Cakes in Gandhinagar">
+    <meta property="og:description" content="Crispy toast, whole wheat khari and custom celebration cakes. Serving Ahmedabad, Gandhinagar and all of Gujarat.">
+    <meta property="og:image" content="images/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+    <link rel="preload" as="image" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Local business data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Y11 Bakers",
+      "image": "images/logo.png",
+      "telephone": "+919974104542",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gandhinagar",
+        "addressRegion": "Gujarat",
+        "addressCountry": "IN"
+      },
+      "areaServed": ["Gandhinagar", "Ahmedabad", "Gujarat"],
+      "sameAs": ["https://www.instagram.com/y11.bakers/"]
+    }
+    </script>
+</head>
+
+
+<body id="top">
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header id="nav">
+        <div class="wrap bar">
+
+            <a class="brand" href="#top" aria-label="Y11 Bakers home">
+                <img src="images/logo.png" alt="Y11 Bakers logo">
+                <span>Y11 Bakers</span>
+            </a>
+
+            <nav id="mainNav" aria-label="Main navigation">
+                <a href="#products">Products</a>
+                <a href="#cakes">Cakes</a>
+                <a href="#about">About</a>
+                <a href="#details">Details</a>
+                <a href="#order">Contact</a>
+
+                <a class="btn sm" id="waNav" target="_blank" rel="noopener noreferrer"
+                   aria-label="Order Y11 Bakers products on WhatsApp">Order Now</a>
+            </nav>
+
+            <button class="burger" id="burger" type="button" aria-label="Open menu"
+                    aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="wrap hero-grid">
+
+                <div class="hero-text">
+                    <p class="eyebrow">Taste of Gujarat · Gandhinagar</p>
+
+                    <h1 id="hero-title">
+                        Freshly baked,
+                        <span>crisp to the last bite.</span>
+                    </h1>
+
+                    <p class="lead">
+                        Premium toast, whole wheat khari and
+                        celebration cakes, baked in Gandhinagar
+                        and delivered across Gujarat.
+                    </p>
+
+                    <div class="cta">
+                        <a class="btn" href="#products">View Products</a>
+                        <a class="btn line" id="waHero" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <div class="ring"></div>
+                    <img class="h1i" fetchpriority="high" src="images/toast-red.webp - Edited.png" alt="">
+                    <img class="h2i" fetchpriority="high" src="images/khari-butter.webp - Edited.png" alt="">
+                    <img class="h3i" fetchpriority="high" src="images/toast-blue.webp - Edited.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             BRAND HIGHLIGHTS
+        ================================================== -->
+
+        <div class="strip" aria-label="Y11 Bakers highlights">
+            <div class="wrap">
+                <span>Top in Gandhinagar</span>
+                <span>100% Whole Wheat Khari</span>
+                <span>Choice-Award Taste</span>
+                <span>All-Gujarat Service</span>
+            </div>
+        </div>
+
+
+        <!-- =================================================
+             PRODUCTS
+        ================================================== -->
+
+        <section id="products" aria-labelledby="products-title">
+            <div class="wrap">
+
+                <div class="head reveal">
+                    <p class="eyebrow">Our Range</p>
+                    <h2 id="products-title">Baked favourites</h2>
+                </div>
+
+                <!-- Featured product carousel -->
+                <div class="product-showcase reveal" aria-label="All Y11 Bakers products carousel">
+                    <div class="showcase-top">
+                        <div>
+                            <span class="showcase-kicker">Our full range</span>
+                            <h3>Toast, Khari &amp; Cakes</h3>
+                        </div>
+
+                        <div class="carousel-controls">
+                            <button class="carousel-arrow" id="productPrev" type="button" aria-label="Previous products">&#8592;</button>
+                            <button class="carousel-arrow" id="productNext" type="button" aria-label="Next products">&#8594;</button>
+                        </div>
+                    </div>
+
+                    <div class="product-carousel" id="productCarousel" tabindex="0" aria-label="All toast, khari and cake products"></div>
+
+                    <div class="carousel-footer">
+                        <span>Explore the full range</span>
+                        <div class="carousel-dots" id="productDots" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+                <!-- Product filters -->
+                <div class="tabs reveal" role="tablist" aria-label="Product categories">
+                    <button class="on" type="button" data-f="all" role="tab" aria-selected="true">All</button>
+                    <button type="button" data-f="toast" role="tab" aria-selected="false">Toast</button>
+                    <button type="button" data-f="khari" role="tab" aria-selected="false">Khari</button>
+                </div>
+
+                <!-- Product cards (generated by script.js) -->
+                <div class="grid" id="productGrid" aria-live="polite"></div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             CAKES
+        ================================================== -->
+
+        <section id="cakes" class="dark" aria-labelledby="cakes-title">
+            <div class="wrap">
+
+                <div class="head reveal">
+                    <p class="eyebrow">Celebrations</p>
+                    <h2 id="cakes-title">Cakes, made to order</h2>
+                    <p class="sub">
+                        Birthdays, anniversaries and every occasion in between.
+                        Every design can be customised on request.
+                    </p>
+                </div>
+
+                <!-- Cake gallery (generated by script.js) -->
+                <div class="grid" id="cakeGrid" aria-live="polite"></div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             CUSTOMIZE CAKE
+        ================================================== -->
+
+        <section id="customize" aria-labelledby="custom-title">
+            <div class="wrap">
+
+                <div class="head reveal">
+                    <p class="eyebrow">Made Just For You</p>
+                    <h2 id="custom-title">Customize your cake</h2>
+                    <p class="sub">Tell us your idea and we will bake it. Fill in the details and send them to us on WhatsApp. You can share reference photos in the chat.</p>
+                </div>
+
+                <form class="cform reveal" id="cakeForm">
+                    <label>Your name
+                        <input type="text" id="cfName" placeholder="Enter your name" required>
+                    </label>
+                    <label>Occasion
+                        <select id="cfOccasion" required></select>
+                    </label>
+                    <label>Flavour
+                        <select id="cfFlavour" required></select>
+                    </label>
+                    <label>Weight
+                        <select id="cfWeight" required></select>
+                    </label>
+                    <label>Delivery date
+                        <input type="date" id="cfDate" required>
+                    </label>
+                    <label>Delivery area
+                        <input type="text" id="cfArea" placeholder="e.g. Gandhinagar, Ahmedabad">
+                    </label>
+                    <label class="full">Message on cake
+                        <input type="text" id="cfMsg" placeholder="e.g. Happy Birthday Aryan">
+                    </label>
+                    <label class="full">Design idea / theme
+                        <textarea id="cfNotes" rows="4" placeholder="Describe colours, theme, characters or toppers..."></textarea>
+                    </label>
+                    <label class="check full">
+                        <input type="checkbox" id="cfEggless"> Eggless cake
+                    </label>
+                    <button class="btn full" type="submit">Send Request on WhatsApp</button>
+                </form>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section id="about" aria-labelledby="about-title">
+            <div class="wrap about">
+
+                <div class="reveal">
+                    <p class="eyebrow">About Us</p>
+
+                    <h2 id="about-title">Rooted in Gandhinagar, loved across Gujarat</h2>
+
+                    <p class="sub l">
+                        Y11 Bakers is known for crunchy toast and flaky whole wheat
+                        khari, the ideal companion to a cup of chai. We serve
+                        Ahmedabad and Gandhinagar, with all-Gujarat service available.
+                    </p>
+
+                    <div class="mfg">
+                        <small>Manufactured by</small>
+                        <b>Super Metro Bakers</b>
+                    </div>
+                </div>
+
+                <div class="stats reveal" aria-label="Y11 Bakers statistics">
+                    <div><b>100%</b><span>Whole wheat khari</span></div>
+                    <div><b>7+</b><span>Flavours</span></div>
+                    <div><b>Gujarat</b><span>Wide service</span></div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             BUSINESS DETAILS / FACT SHEET
+        ================================================== -->
+
+        <section id="details" aria-labelledby="details-title">
+            <div class="wrap">
+
+                <div class="head reveal">
+                    <p class="eyebrow">Business Details</p>
+                    <h2 id="details-title">Company fact sheet</h2>
+                    <p class="sub">
+                        Registered, GST-verified and manufacturing from Gandhinagar.
+                        Everything you need to know before placing a bulk or wholesale order.
+                    </p>
+                </div>
+
+                <div class="fs-highlights reveal">
+                    <div><b>2017</b><span>GST registered</span></div>
+                    <div><b>20–35</b><span>Team members</span></div>
+                    <div><b>Factory</b><span>Direct manufacturer</span></div>
+                </div>
+
+                <div class="factsheet reveal">
+
+                    <div class="fs-top">
+                        <div>
+                            <small>Registered business</small>
+                            <h3>Super Metro Bakers</h3>
+                        </div>
+                        <span class="fs-verified">✔ GST Registered</span>
+                    </div>
+
+                    <dl class="fs-list">
+                        <div class="fs-row"><dt>Company CEO</dt><dd>Y Ansari</dd></div>
+                        <div class="fs-row"><dt>Registered Address</dt><dd>Gandhinagar, Gujarat</dd></div>
+                        <div class="fs-row"><dt>Total Number of Employees</dt><dd>20 to 35 People</dd></div>
+                        <div class="fs-row"><dt>GST Registration Date</dt><dd>2017</dd></div>
+                        <div class="fs-row"><dt>GST Legal Status</dt><dd>Partnership</dd></div>
+                        <div class="fs-row"><dt>GST Nature of Business</dt><dd>Manufacturer</dd></div>
+                        <div class="fs-row">
+                            <dt>GST Additional NOB</dt>
+                            <dd class="fs-chips">
+                                <span>Wholesale Business</span>
+                                <span>Factory / Manufacturing</span>
+                                <span>Retail Business</span>
+                            </dd>
+                        </div>
+                        <div class="fs-row"><dt>GST No.</dt><dd><span class="fs-gst">24CMZPA8083N1Z7</span></dd></div>
+                        <div class="fs-row">
+                            <dt>Payment Mode</dt>
+                            <dd class="fs-chips">
+                                <span>Cash</span>
+                                <span>Credit Card</span>
+                                <span>Cheque</span>
+                                <span>Online</span>
+                            </dd>
+                        </div>
+                        <div class="fs-row"><dt>Shipment Mode</dt><dd>By Road</dd></div>
+                    </dl>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             ORDER / CONTACT
+        ================================================== -->
+
+        <section id="order" class="dark order" aria-labelledby="order-title">
+            <div class="wrap center reveal">
+
+                <p class="eyebrow">Get in Touch</p>
+                <h2 id="order-title">Place your order</h2>
+
+                <p class="sub">
+                    <b id="cName"></b>
+                    ·
+                    <a id="cPhone" aria-label="Call Y11 Bakers"></a>
+                </p>
+
+                <div class="cta c">
+                    <a class="btn" id="waBtn" target="_blank" rel="noopener noreferrer" aria-label="Order Y11 Bakers products on WhatsApp">WhatsApp</a>
+                    <a class="btn line light" id="callBtn" aria-label="Call Y11 Bakers">Call</a>
+                    <a class="btn line light" id="igBtn" target="_blank" rel="noopener noreferrer" aria-label="Visit Y11 Bakers on Instagram">Instagram</a>
+                    <a class="btn line light" id="zomBtn" target="_blank" rel="noopener noreferrer" hidden aria-label="Order Y11 Bakers on Zomato">Zomato</a>
+                    <a class="btn line light" id="swiBtn" target="_blank" rel="noopener noreferrer" hidden aria-label="Order Y11 Bakers on Swiggy">Swiggy</a>
+                </div>
+
+                <p class="area">Ahmedabad &amp; Gandhinagar · All-Gujarat service available</p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+        <div class="wrap">
+            <span>©2006 Y11 Bakers</span>
+            <span>Manufactured by Super Metro Bakers</span>
+        </div>
+    </footer>
+
+
+    <!-- =====================================================
+         FLOATING UI
+    ====================================================== -->
+
+    <div class="progress" id="progress" aria-hidden="true"></div>
+
+    <a class="fab-wa" id="waFab" target="_blank" rel="noopener noreferrer" aria-label="Chat with Y11 Bakers on WhatsApp">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.2 1.3z"/>
+        </svg>
+        <span>Order</span>
+    </a>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+    <script>
+        /* Mobile menu */
+        (function () {
+            var header = document.getElementById("nav"),
+                nav = document.getElementById("mainNav"),
+                btn = document.getElementById("burger");
+            function set(open) {
+                header.classList.toggle("menu-open", open);
+                nav.classList.toggle("open", open);
+                btn.setAttribute("aria-expanded", open);
+                btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+            }
+            btn.addEventListener("click", function () { set(!nav.classList.contains("open")); });
+            nav.addEventListener("click", function (e) { if (e.target.closest("a")) set(false); });
+            addEventListener("resize", function () { if (innerWidth > 820) set(false); });
+            addEventListener("keydown", function (e) { if (e.key === "Escape") set(false); });
+        })();
+    </script>
+
+</body>
+
+</html>
